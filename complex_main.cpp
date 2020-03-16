@@ -7,6 +7,9 @@
 #include "complex_main.h"
 #include <vector>
 #include <algorithm>
+#include <cstdlib>
+#include "Rational.h"
+
 
 
 using namespace std;
@@ -103,5 +106,40 @@ int main()
 	assert(c[2].get_real() == 2 && c[2].get_imaginar() == 4);
 	assert(c[3].get_real() == 3 && c[3].get_imaginar() == 6);
 
+	int Calcul;
+	
+	cout << "We want to add-give 1" << endl << "We want to substract-give 2" << endl << "We want to multiply-give 3" << endl << "We want to divide-give 4" << endl;
+	cout << "Calcul:";
+	cin >> Calcul;
+
+	if (Calcul == 1)
+	{
+		int addFractions(float& result_rational);
+		
+	}
+	else if (Calcul == 2)
+	{
+		int subFractions(float& result_rational);
+		
+	}
+	else if (Calcul == 3)
+	{
+		int multiplyFractions(float& result_rational);
+		
+	}
+	else if (Calcul == 4)
+	{
+		int divideFractions(float& result_rational);
+	
+	}
+	else
+		cout << "introduce a valid symbol" << endl;
+
+	assert(Calcul == ' ');//in caz ca simbolul nu e corect
+	assert(Calcul == '1');
+	assert(Calcul == '2');
+	assert(Calcul == '4');
+	assert(Calcul == '3');
+	
 	return 0;
 }
